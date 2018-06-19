@@ -142,6 +142,7 @@ nav ul a{
     font-size: 18px;
     margin: 0 auto;
     width: fit-content;
+    width: -moz-fit-content;
     left: 0;
     right: 0;
 }
@@ -199,6 +200,7 @@ nav ul a{
     display: flex;
     margin: 55px auto;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 #whyus h1{
@@ -342,6 +344,7 @@ nav ul a{
     right: 0;
     margin: auto;
     width: fit-content;
+    width: -moz-fit-content;
     margin-bottom: 30px;
     font-size: 14px;
 }
