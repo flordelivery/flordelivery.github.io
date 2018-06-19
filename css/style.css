@@ -1,0 +1,380 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 500px;
+    margin-top: 40px
+}
+
+.slick-next{
+    display: none !important;
+}
+
+.slick-prev{
+    display: none !important;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    height: 48px;
+    background-color: #4C3932;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 12px 1px rgba(128, 128, 128, 0.6);
+    top: 0;
+}
+
+nav ul{
+    vertical-align: middle;
+    display: flex;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+}
+
+nav ul a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    outline: none;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: .3s ease;
+    border-bottom: 0px solid white;
+}
+
+.wrapper{
+    padding-top: 57px;
+    padding-bottom: 57px;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.title{
+    margin: 7px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    text-transform: uppercase;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.title p{
+    margin-top: 7px;
+}
+
+.items-grid-first{
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(1, 460px);
+    grid-gap: 2rem;
+    grid-column-gap: 1rem;
+    margin-bottom: 30px;
+}
+
+.items-grid-second{
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(2, 460px);
+    grid-gap: 2rem;
+    grid-column-gap: 1rem;
+    margin-bottom: 30px;
+}
+
+.item{
+    position: relative;
+}
+
+.item:hover{
+    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.desc{
+    position: absolute;
+    bottom: 90px;
+    color: white;
+    background-color: rgba(246, 45, 216, 0.76);
+    text-align: center;
+    margin: 0 auto;
+    width: 290px;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s;
+}
+
+.item img{
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.name{
+    position: absolute;
+    bottom: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+}
+
+.stock{
+    margin-top: 20px;
+    background: linear-gradient(to right,#d4f0da 0,#e3f5e7 100%);
+    height: 216px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.special{
+    position: absolute;
+    top: 30px;
+    bottom:0;
+    margin: auto;
+    left: 170px;
+}
+
+.stock h2{
+    color: #000;
+    font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.reverse .special{
+    left: 580px;
+}
+
+.stock p{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #474747;
+}
+
+.reverse img{
+    left: 140px;
+}
+
+.stock img{
+    position: absolute;
+    width: 261px;
+    bottom: 0;
+    right: 170px;
+}
+
+.reverse h2{
+    max-width: 500px;
+}
+
+.whyus{
+    display: flex;
+    margin: 55px auto;
+    width: fit-content;
+}
+
+#whyus h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+#whyus h3{
+    max-width: 3330px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 3px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+#whyus p{
+    max-width: 338px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #8f8f8f;
+}
+
+.why + .why{
+    padding-left: 40px;
+}
+
+.biteblock{
+    background: url('../img/whyus.jpg');
+    height: 153px;
+    position: relative;
+}
+
+.bite{
+    font-size: 36px !important;
+    color: #fafafa;
+    text-align: center;
+    padding-top: 56px;
+}
+
+#delivery h2{
+    font-size: 28px;
+    max-width: 100% !important;
+    margin-right: 10px;
+    line-height: 35px;
+    color: #333;
+    text-align: left;
+    text-transform: initial;
+    padding-top: 10px;
+    clear: both;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding-bottom: 15px;
+}
+
+#delivery h3{
+    font-size: 28px;
+    max-width: 100% !important;
+    margin-right: 10px;
+    line-height: 35px;
+    color: #333;
+    text-align: left;
+    text-transform: initial;
+    padding-top: 10px;
+    clear: both;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding-bottom: 15px;
+}
+
+#delivery ul{
+    list-style: none;
+}
+
+#delivery ul li{
+    position: relative;
+    line-height: 30px;
+}
+
+#delivery ul li::before{
+    content: "• ";
+    top: 0px;
+    position: absolute;
+    left: -22px;
+    color: #9e1179;
+    font-size: 30px;
+}
+
+#delivery .how{
+    width: 965px !important;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* #delivery:after{
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #ff0044 0%, #8a00f4 100%), linear-gradient(to right, #ff0044 0%, #8a00f4 100%);
+    width: 700px;
+    height: 3px;
+    left:0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#stocks h1{
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+#contacts{
+    margin-top: 80px;
+    background: linear-gradient(to right, #ff0044 0%, #8a00f4 100%), linear-gradient(to right, #ff0044 0%, #8a00f4 100%);
+    position: relative;
+    height: 353px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    right: 0px;
+    display: block;
+    position: absolute;
+    right: 220px;
+}
+
+.copyright{
+    color: #fafafa;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.order{
+    position: absolute;
+    left: 200px;
+    color: #fafafa;
+}
+
+.email{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    font-size: 32px;
+    color: #fafafa;
+}
+
+#header h1{
+    font-size: 58px;
+    position: absolute;
+    z-index: 998;
+    left: 70px;
+    top: 260px;
+    color: #bb00f4;
+    font-family: 'Marck Script', cursive;
+    max-width: 530px
+}
+
+.logo{
+    position: absolute; 
+    z-index: 998;
+    width: 200px;
+    top: 140px;
+    left: 50px;
+}
