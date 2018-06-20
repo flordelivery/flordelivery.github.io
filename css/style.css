@@ -129,7 +129,7 @@ nav ul a{
 .item img{
     position: absolute;
     top: -110px;
-    left: 250;
+    left: 0;
     right: 0;
     margin: auto;
     bottom: 0;
